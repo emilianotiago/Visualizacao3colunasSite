@@ -1,0 +1,121 @@
+:root {
+    --fonte-titulo: 'Big Shoulders Display';
+    --fonte-texto: 'Lexend Deca';
+    --cor-fonte:#ffffff;
+    --cor-sedan: hsl(31, 77%, 52%);
+    --cor-suv:hsl(184, 100%, 22%);
+    --cor-luxo: hsl(179, 100%, 13%);
+}
+
+/* Layout para Desktop*/
+.sessao__principal {
+    display: flex;
+    margin: 7.5em 7.5em 5em 7.5em;
+    
+}
+
+.container {
+    padding: 7.5em;
+    color: var(--cor-fonte);
+}
+
+.titulo__sessao__principal {
+    font-family: var(--fonte-titulo);
+    font-size: 2em;
+    font-weight: 700;
+    font-style: bold;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+.texto__sessao__principal{ 
+    font-size: 1em;
+    font-family: var(--fonte-texto);
+    line-height: 1.7;
+    padding: 0 0 5em 0em;
+
+}
+
+.botao__sessao__principal {
+    font-size: 0.9em;
+    font-family: var(--fonte-texto);
+    border: 2px solid var(--cor-fonte);
+    border-radius: 20px;
+    padding: 0.8em 2em;
+    background-color: var(--cor-fonte);
+    text-decoration: none;
+
+}
+
+ .botao__sessao__principal:hover {
+    border: 2px solid var(--cor-fonte);
+    font-size: 0.9em;
+    background-color: transparent;
+    color: var(--cor-fonte);
+    text-decoration: none;
+    
+}
+
+.botao__sedan{
+    color: var(--cor-sedan);
+}
+.botao__suv{
+    color: var(--cor-suv);
+}
+.botao__luxo{
+    color: var(--cor-luxo);
+}
+
+.sessao__principal__sedan{
+    background-color: var(--cor-sedan);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.sessao__principal__suv {
+    background-color: var(--cor-suv);
+}
+.sessao__principal__luxo {
+    background-color: var(--cor-luxo);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+/* Layout para Mobile a partir de 375px */
+
+@media (max-width: 375px) {
+    body{
+        padding: 3em 2em;
+    }
+
+  .sessao__principal{
+    display: inline;
+  } 
+  .container {
+    padding: 4em;
+  }
+  
+
+  .texto__sessao__principal{ 
+    font-size: 1em;
+    font-family: var(--fonte-texto);
+    line-height: 1.7;
+    padding: 0em 0em 5em 0em;
+}
+ 
+ .sessao__principal__sedan{
+    background-color: var(--cor-sedan);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+   
+}
+.sessao__principal__luxo {
+    background-color: var(--cor-luxo);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0px;
+}
+
+}
